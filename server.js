@@ -3,6 +3,8 @@ const app = express()
 const bodyParser = require('body-parser')
 const methodOverride = require('method-override')
 
+require ('./db/db')
+
 app.get('/', (req, res) => {
     console.log('Its alive')
     res.send('Its alive')
